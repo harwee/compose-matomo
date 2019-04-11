@@ -34,6 +34,8 @@ services:
     networks:
     - back
     - lb_web
+    expose:
+      - "80"
   cron:
     image: piwik:fpm
     links:
